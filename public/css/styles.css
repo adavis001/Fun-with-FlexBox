@@ -191,19 +191,25 @@ p {
   display: block; }
 
 /* close commented backslash hack */
-.small-grid-flexbox {
+.block.small-grid.small-grid-flexbox ul {
   display: flex;
-  flex-flow: center; }
-  .small-grid-flexbox ul {
-    display: flex;
-    flex-wrap: wrap;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 400px;
-    height: 400px;
-    margin-left: 300px; }
-    .small-grid-flexbox ul li {
-      width: 38px;
-      height: 38px;
-      text-align: center;
-      line-height: 35px; }
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 400px;
+  justify-content: center;
+  margin: auto; }
+
+.block.small-grid.small-grid-flexbox li {
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  line-height: 36px; }
+
+@media screen and (max-width: 899px) {
+  .block.small-grid.small-grid-flexbox ul {
+    margin: 0;
+    width: 100%; }
+  .block.small-grid.small-grid-flexbox li {
+    height: 30px;
+    width: 9%;
+    /*   flex-wrap: nowrap; */ } }

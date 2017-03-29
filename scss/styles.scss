@@ -5,26 +5,40 @@
 
 
 // 1. Many small items in a grid
-.small-grid-flexbox{
-	display: flex;
-	flex-flow: center;
-ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 400px;
-    height: 400px;
-    margin-left: 300px;
-	li{
-		width: 38px;
-		height: 38px;
-		text-align: center;
-		line-height: 35px;
-	} 
-}
+.block.small-grid.small-grid-flexbox{
+
+ ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 400px;
+  justify-content: center;
+  margin: auto;
+
+ }
+
+ li{
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  line-height: 36px;
+  }
+
+@media screen and (max-width: 899px){
+   ul{
+  margin: 0;
+  width: 100%;
+
+ }
+
+li{
+  height: 30px;
+  width: 9%;
+/*   flex-wrap: nowrap; */
+  }
 }
 
+}
 // 2. 2-Column Grid
 
 
