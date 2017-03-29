@@ -191,25 +191,33 @@ p {
   display: block; }
 
 /* close commented backslash hack */
-.block.small-grid.small-grid-flexbox ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 400px;
-  justify-content: center;
-  margin: auto; }
-
-.block.small-grid.small-grid-flexbox li {
-  height: 38px;
-  width: 38px;
-  text-align: center;
-  line-height: 36px; }
-
-@media screen and (max-width: 899px) {
+.block.small-grid.small-grid-flexbox {
+  background-color: red; }
   .block.small-grid.small-grid-flexbox ul {
-    margin: 0;
-    width: 100%; }
+    display: flex;
+    width: 400px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; }
   .block.small-grid.small-grid-flexbox li {
-    height: 30px;
-    width: 9%;
-    /*   flex-wrap: nowrap; */ } }
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    text-align: center; }
+  @media screen and (max-width: 899px) {
+    .block.small-grid.small-grid-flexbox ul {
+      margin: 0;
+      width: 100%; }
+    .block.small-grid.small-grid-flexbox li {
+      width: 9%;
+      height: 30px; } }
+
+.block.two-col-grid.two-col-grid-flexbox {
+  display: flex;
+  flex-direction: row-reverse; }
+  .block.two-col-grid.two-col-grid-flexbox .column-1 {
+    width: 50%;
+    height: 50%; }
+  .block.two-col-grid.two-col-grid-flexbox .column-2 {
+    width: 50%; }
