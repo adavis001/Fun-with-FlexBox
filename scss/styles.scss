@@ -72,3 +72,42 @@ li{
 
 
 // 4. Ordering
+
+.block.ordering-block{
+	background-color: gold;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+.item.item-d{
+	background-color: gold;
+	width: 18%;
+}
+
+.item.item-c {
+	width: 22.5%
+}
+
+.item.item-b {
+	width: 10%
+}
+
+@media screen and (max-width: 1200px) {
+	background-color: aqua;
+	flex-direction: initial;
+	justify-content: center;
+}
+@media screen and (max-width: 900px) {
+	flex-direction: column;
+	.item.item-c{
+		order: -2;
+		width: initial;
+	}
+	.item.item-b {
+		order: -1;
+		width: initial;
+	}
+	.item.item-d{
+		width: initial;
+	}
+}
+}

@@ -233,3 +233,32 @@ p {
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.block.ordering-block {
+  background-color: gold;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around; }
+  .block.ordering-block .item.item-d {
+    background-color: gold;
+    width: 18%; }
+  .block.ordering-block .item.item-c {
+    width: 22.5%; }
+  .block.ordering-block .item.item-b {
+    width: 10%; }
+  @media screen and (max-width: 1200px) {
+    .block.ordering-block {
+      background-color: aqua;
+      flex-direction: initial;
+      justify-content: center; } }
+  @media screen and (max-width: 900px) {
+    .block.ordering-block {
+      flex-direction: column; }
+      .block.ordering-block .item.item-c {
+        order: -2;
+        width: initial; }
+      .block.ordering-block .item.item-b {
+        order: -1;
+        width: initial; }
+      .block.ordering-block .item.item-d {
+        width: initial; } }
