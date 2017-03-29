@@ -221,3 +221,15 @@ p {
     height: 50%; }
   .block.two-col-grid.two-col-grid-flexbox .column-2 {
     width: 50%; }
+
+.block.centering-formula.centering-formula-1 {
+  background-color: tomato;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.block.centering-formula.centering-formula-2 {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
